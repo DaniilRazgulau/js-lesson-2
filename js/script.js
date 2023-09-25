@@ -28,7 +28,7 @@ if((+str[0] + +str[1] + +str[2]) == (+str[3] + +str[4] + +str[5])){
 
 //N4
 
-let a = [1, 0 , -3];
+let a = 1;
 
 if(a > 0){
     console.log('Верно');
@@ -38,17 +38,21 @@ if(a > 0){
 
 //N5
 
-let az = 10;
-let bz = 2;
-let sum = az + bz;
-let residual = az - bz;
-let work = az * bz;
+let c = 1;
+let b = 2;
+let sum = c + b;
+let residual = c - b;
+let work = c * b;
 let quotient = 10 / 2;
 console.log(`${sum} ${residual} ${work} ${quotient}`)
 
 //N6
 
-
+if (c > 2 && c < 11 || b >= 6 && b < 14) {
+    console.log('верно');
+} else {
+    console.log('Неверно');
+}
 
 //N7
 
@@ -93,4 +97,21 @@ switch(true){
 
 //N10
 
+let mounth = prompt('Какой месяц');
+mounth = day / 31;
 
+switch(true){
+    case mounth >= 1 && mounth < 3 || mounth === 12 :
+        console.log('Зима');
+        break;
+    case mounth >= 3 && mounth < 6 :
+        console.log('Весна');
+        break;
+    case mounth >= 6 && mounth < 9 :
+        console.log('Лето');
+        break;
+    case mounth >= 9 && mounth < 12 :
+        console.log('Осень');
+        break;
+    default: console.log('ошибка');
+}
